@@ -1,0 +1,269 @@
+/*................Variables......................*/
+header h1, header p {
+  color: #FFFFFF; }
+
+/*..................Menu.Responsive.....................*/
+.navbar {
+  font-size: 15px;
+  padding: 10px 0px; }
+
+.navbar-collapse {
+  overflow: hidden !important; }
+
+.navbar-inverse {
+  background-color: rgba(215, 120, 63, 0.6);
+  border: 1px solid #F38630; }
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #F38630 !important; }
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #F38630 !important; }
+
+.navbar-inverse .navbar-toggle {
+  border-color: #468847; }
+
+.pd-top15 {
+  margin-top: 10px; }
+
+/*......................Back.Header......................*/
+.BackIndex1 {
+  background-image: url(../img/carousel-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10%;
+  width: 100%;
+  height: 100%; }
+
+.DivBack1 {
+  width: 100%;
+  height: 600px; }
+
+/*.................Fin.De.Header..........................*/
+section .col-md-2, section .col-md-1 {
+  width: 165px;
+  height: 165px;
+  margin-bottom: 10px; }
+
+body h1 {
+  font-size: 60px; }
+body .MBotton {
+  width: 30%;
+  border: 1px solid #F38630; }
+body .BackGray {
+  background-color: #2C3E50; }
+body .rgba {
+  background-color: rgba(215, 120, 63, 0.6);
+  padding: 5% 0px; }
+body .TextOrange {
+  color: #F38630; }
+body .BackGreen {
+  background-color: #429C44;
+  /*h3 {
+  	color: #E2FF93;
+  }*/ }
+  body .BackGreen i {
+    font-size: 25px;
+    margin: 2%; }
+body .TextGray {
+  color: #A4A4A4; }
+body .BackGray, body .BackGreen {
+  color: #FFFFFF;
+  padding-bottom: 10%; }
+body .H1P, body .Mtop {
+  margin-top: 10%; }
+body .Img, body .Area, body footer hr {
+  width: 60%; }
+body .DivImg {
+  width: 100%; }
+
+/*----------Clases-Simples------------*/
+.col-md-1 {
+  height: 0px; }
+
+.C1 {
+  background-color: #69D2E7; }
+
+.C2 {
+  background-color: #A7DBDB; }
+
+.C3 {
+  background-color: #E0E4CC; }
+
+.C4 {
+  background-color: #F38630; }
+
+.C5 {
+  background-color: #FA6900; }
+
+.C6 {
+  background-color: #E94C6F; }
+
+.C7 {
+  background-color: #542733; }
+
+.C8 {
+  background-color: #5A6A62; }
+
+.C9 {
+  background-color: #C6D5CD; }
+
+.C10 {
+  background-color: #FDF200; }
+
+.C11 {
+  background-color: #DB3340; }
+
+.C12 {
+  background-color: #E8B71A; }
+
+.C13 {
+  background-color: #F7EAC8; }
+
+.C14 {
+  background-color: #1FDA9A; }
+
+.C15 {
+  background-color: #28ABE3; }
+
+.C16 {
+  background-color: #588C73; }
+
+.C17 {
+  background-color: #F2E394; }
+
+.C18 {
+  background-color: #F2AE72; }
+
+.C19 {
+  background-color: #D96459; }
+
+.C20 {
+  background-color: #8C4646; }
+
+.C21 {
+  background-color: #D0C91F; }
+
+.C22 {
+  background-color: #85C4B9; }
+
+.C23 {
+  background-color: #008BBA; }
+
+.C24 {
+  background-color: #DF514C; }
+
+.C25 {
+  background-color: #CD403B; }
+
+/*................Prueba de Hover.....*/
+.HrGray {
+  border: 1px solid #F38630;
+  display: none; }
+
+.box0:hover {
+  padding: 2%;
+  background-color: rgba(215, 120, 63, 0.6); }
+
+.box0:hover .HrGray {
+  background-color: white;
+  display: block; }
+
+.box0:hover h3 {
+  color: #D0C91F; }
+
+.box0:hover i {
+  color: #E8B71A; }
+
+.box0:hover .TextGray {
+  color: white; }
+
+.box0:hover .Img {
+  border: 3px solid #F38630;
+  border-radius: 10%;
+  margin-top: 10%; }
+
+.box0:hover .DivImg {
+  transform: rotate(10deg); }
+
+/*...............Mixin..................*/
+.DesingButton {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  padding: 2% 0px;
+  border: 1px solid #F38630;
+  width: 200px;
+  background-color: #F38630;
+  color: #FFFFFF;
+  margin-top: 2%; }
+
+/*<!-- ..............Panel.BackGround.Gris.Dos................ -->*/
+#CajasBest:hover {
+  border: 3px solid #F38630;
+  margin-top: -40px; }
+
+#CajasBest {
+  border: 1px solid #429C44; }
+
+.BackWhite {
+  background-color: #FFFFFF;
+  color: #2E2E2E; }
+
+.BackGreen2 {
+  background-color: #429C44;
+  font-size: 10px; }
+
+.rgba2 {
+  background-color: rgba(215, 104, 44, 0.7); }
+
+.PCaja {
+  padding: 5% 0px; }
+
+.PCajaButton {
+  padding: 40px 0px; }
+
+.FontMax {
+  font-size: 40px; }
+
+.FontM {
+  font-size: 20px; }
+
+.PCaja:first-child {
+  padding: 10% 0px;
+  font-size: 25px; }
+
+/*.............Barras.De.Progreso................*/
+.progress-bar {
+  background-color: #F38630; }
+
+/*.................Formulario.....................*/
+.Area {
+  color: #B1A5E8;
+  padding: 5px; }
+
+/*............Footer.....................*/
+.BackFooter {
+  background-image: url(../img/img-divider-img.jpg);
+  background-position: center;
+  width: 100%;
+  height: 100%; }
+
+footer .FontGray1 {
+  font-size: 60px;
+  padding: 60px; }
+footer .Display {
+  display: inline-block;
+  padding-left: 2%;
+  text-align: left; }
+
+/*.................Medias...............*/
+@media (max-width: 767) {
+  .Green {
+    color: red; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,309 @@
+/*................Variables......................*/
+
+$CajasColor: 165px;
+$Gray: #2C3E50;
+$Green: #429C44;
+$Orange: #F38630;
+$M10px: 10px;
+$P10: 10%;
+$P5: 5%;
+$P2: 2%;
+$White: #FFFFFF;
+$ValorImgMax: 100%;
+$ValorMedio: 60%;
+$FontSize: 60px;
+$rgba: rgba(215, 120, 63, 0.6);
+
+header{
+	h1, p{
+		color:$White;
+	}
+}
+
+/*..................Menu.Responsive.....................*/
+.navbar{
+	font-size: 15px;
+	padding: 10px 0px;
+}
+.navbar-collapse {
+	overflow: hidden !important;
+}
+.navbar-inverse {
+	background-color: rgba(215, 120, 63, 0.6);
+	border: 1px solid $Orange;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+   	border-color: $Orange !important;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  	background-color: $Orange !important;
+}
+.navbar-inverse .navbar-toggle {
+   	border-color: #468847;
+}
+.pd-top15{
+	margin-top: 10px;
+}
+/*......................Back.Header......................*/
+.BackIndex1 {
+	background-image: url(../img/carousel-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 10%;
+	width: $ValorImgMax;
+	height: $ValorImgMax;
+}
+.DivBack1 {
+	width: $ValorImgMax;
+	height: 600px;
+}
+/*.................Fin.De.Header..........................*/
+section {
+	.col-md-2, .col-md-1 {
+	width: $CajasColor;
+  	height: $CajasColor;
+  	margin-bottom: $M10px;
+	}
+}
+body {
+	h1 {
+		font-size: $FontSize;
+	}
+	.MBotton {
+		width: 30%;
+		border:1px solid $Orange;
+	}
+	.BackGray {
+		background-color: $Gray;
+	}
+	.rgba {
+		background-color: $rgba;
+		padding: $P5 0px;
+	}
+	.TextOrange {
+		color: $Orange;
+	}
+	.BackGreen {
+		background-color: $Green;
+		i {
+			font-size: 25px;
+			margin: 2%;
+		}
+		/*h3 {
+			color: #E2FF93;
+		}*/
+	}
+	.TextGray {
+		color: #A4A4A4;
+	}
+	.BackGray, .BackGreen, {
+		color: $White;
+		padding-bottom: $P10;
+	}
+	.H1P, .Mtop {
+		margin-top: $P10;
+	}
+	.Img, .Area, footer hr {
+		width: $ValorMedio;
+	}
+	.DivImg {
+		width: $ValorImgMax;
+	}
+}
+/*----------Clases-Simples------------*/
+.col-md-1 {
+	height: 0px;
+}
+.C1 {
+	background-color: #69D2E7;
+}
+.C2 {
+	background-color: #A7DBDB;
+}
+.C3 {
+	background-color: #E0E4CC;
+}
+.C4 {
+	background-color: #F38630;
+}
+.C5 {
+	background-color: #FA6900;
+}
+.C6 {
+	background-color: #E94C6F;
+}
+.C7 {
+	background-color: #542733;
+}
+.C8 {
+	background-color: #5A6A62;
+}
+.C9 {
+	background-color: #C6D5CD;
+}
+.C10 {
+	background-color: #FDF200;
+}
+.C11 {
+	background-color: #DB3340;
+}
+.C12 {
+	background-color: #E8B71A;
+}
+.C13 {
+	background-color: #F7EAC8;
+}
+.C14 {
+	background-color: #1FDA9A;
+}
+.C15 {
+	background-color: #28ABE3;
+}
+.C16 {
+	background-color: #588C73;
+}
+.C17 {
+	background-color: #F2E394;
+}
+.C18 {
+	background-color: #F2AE72;
+}
+.C19 {
+	background-color: #D96459;
+}
+.C20 {
+	background-color: #8C4646;
+}
+.C21 {
+	background-color: #D0C91F;
+}
+.C22 {
+	background-color: #85C4B9;
+}
+.C23 {
+	background-color: #008BBA;
+}
+.C24 {
+	background-color: #DF514C;
+}
+.C25 {
+	background-color: #CD403B;
+}
+/*................Prueba de Hover.....*/
+.HrGray {
+	border: 1px solid $Orange;
+	display: none;
+}
+.box0:hover {
+	padding: 2%;
+	background-color: rgba(215, 120, 63, 0.6);
+}
+.box0:hover .HrGray{
+	background-color: white;
+	display: block;
+}
+.box0:hover h3{
+	color: #D0C91F;
+}
+.box0:hover i{
+	color: #E8B71A;
+}
+.box0:hover .TextGray{
+	color: white;
+}
+.box0:hover .Img{
+	border: 3px solid $Orange;
+	border-radius: $P10;
+	margin-top: $P10;
+}
+.box0:hover .DivImg {
+	transform: rotate(10deg);
+}
+/*...............Mixin..................*/
+@mixin border-btn($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+	padding: $P2 0px;
+	border:1px solid $Orange;
+	width: 200px;
+	background-color: $Orange;
+	color: $White;
+	margin-top: $P2;
+} 
+.DesingButton{
+    			@include border-btn(25px);
+}
+/*<!-- ..............Panel.BackGround.Gris.Dos................ -->*/
+#CajasBest:hover {
+	border: 3px solid $Orange;
+	margin-top: -40px;
+}
+#CajasBest {
+	border: 1px solid $Green;
+}
+.BackWhite {
+	background-color: $White;
+	color: #2E2E2E;
+}
+.BackGreen2 {
+	background-color: $Green;
+	font-size: 10px;
+}
+.rgba2 {
+	background-color: rgba(215, 104, 44, 0.7);
+}
+.PCaja {
+	padding: $P5 0px;
+}
+.PCajaButton {
+	padding: 40px 0px;
+}
+.FontMax {
+	font-size: 40px;
+}
+.FontM {
+	font-size: 20px,
+}
+.PCaja:first-child { 
+    padding: $P10 0px;
+    font-size: 25px;
+}
+/*.............Barras.De.Progreso................*/
+
+.progress-bar {
+    background-color: $Orange;
+}
+/*.................Formulario.....................*/
+.Area {
+	color: #B1A5E8;
+	padding: 5px;
+}
+/*............Footer.....................*/
+.BackFooter {
+	background-image: url(../img/img-divider-img.jpg);
+	background-position: center;
+	width: $ValorImgMax;
+	height: $ValorImgMax;
+}
+footer {
+	.FontGray1 {
+		font-size: $FontSize;
+		padding: $FontSize;
+	}
+	.Display {
+		display: inline-block;
+		padding-left: $P2;
+		text-align: left;
+	}
+}
+/*.................Medias...............*/
+@media (max-width: 767) {
+		.Green {
+			color: red;
+		}
+}
